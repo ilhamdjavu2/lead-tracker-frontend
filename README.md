@@ -27,28 +27,57 @@ This project showcases a clean and structured frontend implementation integrated
 
 ---
 
+## 🔗 Backend API
+
+This frontend consumes API from:
+
+👉 https://github.com/ilhamdjavu2/lead-tracker-backend
+
+Make sure the backend is running before starting the frontend.
+
+---
+
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-repo/lead-tracker.git
+git clone https://github.com/ilhamdjavu2/lead-tracker-frontend.git
+```
+```bash
 cd lead-tracker-frontend
+```
+```bash
 composer install
+```
+```bash
 cp .env.example .env
+```
+```bash
 php artisan key:generate
 ```
 
+### ⚙️ Environment Variables
+
+Copy `.env.example` to `.env` and configure:
+
+```env
+API_BASE_URL=http://127.0.0.1:8001/api
+API_KEY=your_api_key_here
+```
 
 ### Run Project
 ```bash
 php artisan serve
 ```
 
-## 📬 Postman Collection
-
-👉 Import Postman Collection:
-https://documenter.getpostman.com/view/1813672/2sBXirk8dd
-
 ---
+
+## 🧠 Application Flow
+
+- Blade renders initial UI
+- DataTables fetches data via AJAX
+- Laravel routes act as proxy to backend API
+- jQuery handles user interactions (CRUD)
+- SweetAlert2 handles confirmations and alerts
 
 ## 📦 Features
 
@@ -57,6 +86,15 @@ https://documenter.getpostman.com/view/1813672/2sBXirk8dd
 - Inline status update (dropdown + confirmation)
 - Create lead via modal form (AJAX)
 - Delete lead with confirmation dialog
+
+---
+
+## 📬 Postman Collection
+
+👉 Import Postman Collection:
+```bash
+https://documenter.getpostman.com/view/1813672/2sBXirk8dd
+```
 
 ---
 
