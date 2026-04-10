@@ -89,6 +89,22 @@ php artisan serve
 
 ---
 
+## 📸 Screenshots
+
+### Lead List
+![Lead List](docs/lead-list.png)
+
+### Create Lead Modal
+![Create Lead](docs/create-lead.png)
+
+### Delete Confirmation
+![Delete Confirmation](docs/delete-confirm.png)
+
+### Status Confirmation
+![Status Confirmation](docs/status-confirm.png)
+
+---
+
 ## 📬 Postman Collection
 
 👉 Import Postman Collection:
